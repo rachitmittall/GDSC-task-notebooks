@@ -7,7 +7,6 @@ This repository contains my work for the GDSC task, where I trained multiple mac
 ## Project Overview
 
 - **Goal**: Predict the target variable from the provided dataset.  
-- **Dataset**: [Add dataset source or description here – e.g., provided by GDSC task organizers].  
 - **Metric**: Root Mean Squared Error (RMSE).  
 - **Final Approach**: A weighted blend of **XGBoost**, **LightGBM**, and **CatBoost** models.
 
@@ -32,10 +31,7 @@ GDSC-task-notebooks/
 │ ├── lgbm_tuned.py # Tuned LightGBM model (RandomizedSearchCV)
 │ ├── catboost_model.py # CatBoost model
 │ └── blending_allmodels.py # Weighted blend of all models (final)
-│
-├── results/
-│ └── final_submission.csv # Output submission file
-│
+|
 ├── README.md
 
 ---
