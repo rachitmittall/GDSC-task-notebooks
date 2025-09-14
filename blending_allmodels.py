@@ -42,7 +42,7 @@ submission = pd.DataFrame({
 })
 
 submission.to_csv("submission_blend_safe2.csv", index=False, float_format="%.6f")
-print("🎯 Submission file 'submission_blend_safe2.csv' created successfully!")
+print("Submission file 'submission_blend_safe2.csv' created successfully!")
 
 # -------------------------------
 # Final sanity checks
@@ -51,9 +51,8 @@ assert len(submission) == len(df_unk), "Row count mismatch!"
 assert submission['LOCAL_IDENTIFIER'].is_unique, "Duplicate IDs found!"
 assert list(submission.columns) == ["LOCAL_IDENTIFIER", "CORRUCYSTIC_DENSITY"], "Wrong column order!"
 
-print("✅ All sanity checks passed.")
+print("All sanity checks passed.")
 print(submission.head())
-
 
 """
 In this I used many different combinations of weightage and every combination gave different results.
