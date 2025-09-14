@@ -184,7 +184,7 @@ def main():
     submission = create_submission(best_model, df_test, SUBMISSION_PATH)
     print("Submission file created.")
     print(submission.head())
-    print("All checks passed ✅")
+    print("All checks passed.")
 
 
 if __name__ == "__main__":
